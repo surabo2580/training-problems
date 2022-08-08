@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class Lab {
@@ -11,10 +14,24 @@ public class Lab {
         int c= sc.nextInt();
         System.out.print("Enter n ");
         int n= sc.nextInt();
+
+
+
 //        int x = 30;
 //        int y = 40;
 //        int z = 20;
 //        int n = 25;
+        List<Integer> labsList=new ArrayList<Integer>();
+
+        labsList.add(a);
+        labsList.add(b);
+        labsList.add(c);
+        Collections.sort(labsList);
+
+
+
+        System.out.println(labsList);
+
         if(a>=n){
             System.out.println("L1");
         }
