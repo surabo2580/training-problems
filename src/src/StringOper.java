@@ -17,7 +17,7 @@ public class StringOper {
         System.out.println(input);
         System.out.println("length is "+ str.length());
         System.out.println(str + str2);
-        if(str == str2){
+        if(str.equals(str2)){
             System.out.println("equal");
         }
 
