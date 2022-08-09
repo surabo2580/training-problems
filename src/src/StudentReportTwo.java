@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class StudentReportTwo {
+    // students report practice two
     public static void main(String args[])
     {
         String name;
