@@ -19,14 +19,27 @@ class TravellerData{
     public static float checkAndCalculate(String name1, String name2, float weight1,float weight2){
         float fine1= 0;
         float fine2 = 0;
-        if(weight1>15){
+        if(weight1>15 && weight2>15){
            fine1 = (weight1 - 15) * 500;
-            System.out.println("fine for"+ name1 + fine1);
+           System.out.println("fine for"+ name1 + fine1);
+           fine2 = (weight2 - 15) * 500;
+           System.out.println(" fine for " + name2 + fine2);
         }
-        else if (weight2>15){
+        else if (weight1>15 && weight2<15){
+            System.out.println(name2 + "you dont have any fine");
+            fine1 = (weight1 - 15) * 500;
+            System.out.println(" fine for " + name1 + fine1);
+        }
+        else if (weight1<15 && weight2>15){
+            System.out.println(name1 + "you dont have any fine");
             fine2 = (weight2 - 15) * 500;
             System.out.println(" fine for " + name2 + fine2);
         }
+
+//        fine1 = (weight1 - 15) * 500;
+//        System.out.println("fine for"+ name1 + fine1);
+//        fine2 = (weight2 - 15) * 500;
+//        System.out.println(" fine for " + name2 + fine2);
         System.out.println("total fine will be" + fine1+fine2);
         return (fine1+fine2);
     }
