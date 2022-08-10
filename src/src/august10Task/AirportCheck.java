@@ -59,6 +59,6 @@ public class AirportCheck {
 
 
         System.out.println(TravellerData.checkAndCalculate(name1,name2,weight1,weight2));
-
+//
     }
 }
