@@ -57,7 +57,7 @@ class Student
         this.totalMarks=total;
 
     }
-    static void rankThemAll(Student  students[])
+    static void rankThemAll(Student[] students)
     {
         System.out.println("NAME"+"    "+"RANK");
         TreeMap<Integer,String> sortedStudentTotalMarks=new TreeMap<Integer,String>(Collections.reverseOrder());
