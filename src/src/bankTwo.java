@@ -13,10 +13,11 @@ class CurrentType implements AccountType{
 
     @Override
     public void withdraw(float amount) {
-        if (amount>=bal){
-            System.out.println("withdraw succesfull");
+        if (amount<0.2*bal){
+            System.out.println("you cant withdrwa as you have a limit of 20% draft");
             bal-=amount;
         }
+
     }
 
     public void deposit(float amount){
@@ -34,8 +35,8 @@ class SavingsType implements AccountType{
 
     @Override
     public void withdraw(float amount) {
-        if (amount<0.2*bal){
-            System.out.println("you cant withdrwa as you have a limit of 20% draft");
+        if (amount>=bal){
+            System.out.println("withdraw succesfull");
             bal-=amount;
         }
     }
