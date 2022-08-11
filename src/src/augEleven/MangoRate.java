@@ -22,7 +22,7 @@ public class MangoRate {
             int price = iterator.getValue() * quantity;
             System.out.println("total price of the " + iterator.getKey() + " is " + price);
         }
-
+//
 
     }
 }
