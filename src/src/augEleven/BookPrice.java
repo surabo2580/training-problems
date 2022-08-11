@@ -25,9 +25,9 @@ public class BookPrice {
         HashMap<String,Integer> userCart = new HashMap<>();
 
 
-        HashMap<Integer, String> bookDetails = new HashMap<>();
-        bookDetails.put(1, "book1");
-        bookDetails.put(2, "book2");
+        HashMap<Integer, String> bookPrn = new HashMap<>();
+        bookPrn.put(15674, "book1");
+        bookPrn.put(25457, "book2");
 
         HashMap<String, Integer> bookPrice = new HashMap<>();
         bookPrice.put("book1", 200);
