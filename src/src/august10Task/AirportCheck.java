@@ -1,7 +1,13 @@
 package august10Task;
 
 import java.util.Scanner;
+class LuggLimitException extends Exception{
+    LuggLimitException(String name1,String name2,float weight1,float weight2 )
+    {
+        System.out.println("you have a 0.1 extra weight but you can go");
+    }
 
+}
 class TravellerData{
     float weight1;
     String name1 ;
@@ -19,6 +25,11 @@ class TravellerData{
     public static float checkAndCalculate(String name1, String name2, float weight1,float weight2){
         float fine1= 0;
         float fine2 = 0;
+//        try{
+//            if (weight1 == 15.1 || weight2==15.1){
+//                //throw LuggLimitException(name1,name2,weight1,weight2)
+//            }
+//        }
         if(weight1>15 && weight2>15){
            fine1 = (weight1 - 15) * 500;
            System.out.println("fine for"+ name1 + fine1);
