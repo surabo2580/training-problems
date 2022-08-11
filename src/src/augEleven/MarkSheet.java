@@ -22,7 +22,14 @@ public class MarkSheet {
         System.out.println("percentage of student is " + percentageOfStudent);
 
         // delete the position 2
-        marksheet.remove(marksheet.get(2));
+        try{
+            marksheet.remove(marksheet.get(9));
+        } catch (Exception e) {
+            System.out.println("position is not in the range");
+            throw new RuntimeException(e);
+
+        }
+
         System.out.println("after deletion subject 2 from marksheet" + marksheet);
     }
 }
